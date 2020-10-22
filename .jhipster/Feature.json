@@ -1,0 +1,44 @@
+{
+  "name": "Feature",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "client",
+      "fieldType": "Client",
+      "fieldValues": "Kitty,Hawk,Kites,Norbank,OBX,Unlimited"
+    },
+    {
+      "fieldName": "clientPriority",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "targetDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "productArea",
+      "fieldType": "ProductArea",
+      "fieldValues": "Policies,Billing,Claims,Reports"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201022180525",
+  "entityTableName": "feature",
+  "dto": "no",
+  "pagination": "infinite-scroll",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

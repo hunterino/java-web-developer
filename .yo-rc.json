@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "us.twohtwo.featurekeeper",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.10.4",
+    "applicationType": "monolith",
+    "baseName": "featureKeeper",
+    "packageName": "us.twohtwo.featurekeeper",
+    "packageFolder": "us/twohtwo/featurekeeper",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": true,
+    "jwtSecretKey": "NWViYmMyZTRhYjM4NzI1ZDE0Y2M5ZjM5OWRkZjZlNDEyODhjMWQzMjIxMTYzNTVmMzFjOWQzZGYzMGVlMGRhMDZkODVjMWIzY2U3ZDk1MTQxMDhhODJiNGI3OGM1MGI5NjQzZGRkOGZmODM1ZjI4OGIzMWE1NWVmNWZmODZjYjM=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "spacelab",
+    "clientThemeVariant": "primary",
+    "creationTimestamp": 1603389319557,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": ["en", "fr"],
+    "blueprints": []
+  }
+}

@@ -1,0 +1,50 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="feature">
+            <h2><span jhiTranslate="featureKeeperApp.feature.detail.title">Feature</span> {{ feature.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="featureKeeperApp.feature.title">Title</span></dt>
+                <dd>
+                    <span>{{ feature.title }}</span>
+                </dd>
+                <dt><span jhiTranslate="featureKeeperApp.feature.description">Description</span></dt>
+                <dd>
+                    <span>{{ feature.description }}</span>
+                </dd>
+                <dt><span jhiTranslate="featureKeeperApp.feature.client">Client</span></dt>
+                <dd>
+                    <span jhiTranslate="{{ 'featureKeeperApp.Client.' + feature.client }}">{{ feature.client }}</span>
+                </dd>
+                <dt><span jhiTranslate="featureKeeperApp.feature.clientPriority">Client Priority</span></dt>
+                <dd>
+                    <span>{{ feature.clientPriority }}</span>
+                </dd>
+                <dt><span jhiTranslate="featureKeeperApp.feature.targetDate">Target Date</span></dt>
+                <dd>
+                    <span>{{ feature.targetDate }}</span>
+                </dd>
+                <dt><span jhiTranslate="featureKeeperApp.feature.productArea">Product Area</span></dt>
+                <dd>
+                    <span jhiTranslate="{{ 'featureKeeperApp.ProductArea.' + feature.productArea }}">{{ feature.productArea }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/feature', feature.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

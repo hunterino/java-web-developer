@@ -1,0 +1,11 @@
+{
+  "featureKeeperApp": {
+    "ProductArea": {
+      "null": "",
+      "Policies": "Policies",
+      "Billing": "Billing",
+      "Claims": "Claims",
+      "Reports": "Reports"
+    }
+  }
+}

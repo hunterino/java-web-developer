@@ -1,0 +1,30 @@
+
+entity Feature {
+	 title String//: A short, descriptive name of the feature request.
+	 description TextBlob//: A long description of the feature request.
+	 client Client//: A selection list of clients (use "Client A", "Client B", "Client C")
+	 clientPriority Long//: The feature's priority number according to the client (1...n). Client Priority numbers should not repeat for the given client, so if a priority is set on a new feature as "1", then all other feature requests for that client should be adjusted.
+	 targetDate LocalDate//: The date that the client is hoping to have the feature.
+	 productArea ProductArea//: A selection list of product areas (use 'Policies', 'Billing', 'Claims', 'Reports')
+}
+
+enum Client {
+    Kitty Hawk Kites, Norbank, OBX Unlimited
+}
+
+enum ProductArea {
+	Policies, Billing, Claims, Reports
+}
+
+// Set pagination options
+paginate Feature with infinite-scroll
+// paginate Job with pagination
+
+// Use Data Transfer Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
