@@ -20,12 +20,79 @@ other feature requests for that client should be adjusted.
 'Reports')
 
 ## Tech Stack
+
+Requirements - local development
+* Java 11
+* Node 12.19.x --lts
+* Gradle 6.1.x - tested with, may work with others.
+* (optional) docker
+
+## Setup And Run
+Install Jhipster
+```shell
+npm install -g generator-jhipster
+```
+clone the repot from git:
+```shell
+git clone https://github.com/hunterino/java-web-developer.git
+```
+```shell
+cd java-web-developer
+```
+Install node dependencies
+```shell
+npm install
+```
+
+run
+```shell
+gradle
+```
+
+It will start and be running [Landing Page](https://localhost:8080/)
+
+## Logins
+
+* user - username=user password=user
+* admin - username=admin password=admin
+
+## Be sure and checkout
+* the admin tools
+* the language change
+
+## Advanced features
+
+### Deploy to docker
+
+-v parameter need to be altered
+
+```shell
+docker container run --name jhipster -v ~/{User_Directory_From_repot}:/home/jhipster/app -v ~/.m2:/home/jhipster/.m2 -p 8080:8080 -p 9000:9000 -p 3001:3001 -d -t jhipster/jhipster
+```
+example
+```shell
+docker container run --name jhipster -v ~/code/java-web-developer:/home/jhipster/app -v ~/.m2:/home/jhipster/.m2 -p 8080:8080 -p 9000:9000 -p 3001:3001 -d -t jhipster/jhipster
+```
+
+### generate CI/CD
+
+
+
+## Next Steps
+*Better error message when a non unique customer/customer_priority is saved
+
+
+
+
+
+
 The following are the tools our team favors.  They are preferred, but not required, for this project.
 
-* Java 8
+* Java 11
 * Spring Boot
 * JPA/Hibernate
 * Angular
+
 
 ## Guidelines
 
