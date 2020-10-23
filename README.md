@@ -1,5 +1,9 @@
 # Java/Web Developer Project
-This is a project that we use for evaluating the technical skills of potential team members. The expectation is that you will spend a maximum of 2-3 hours working on the project. We don't expect the code to be perfect. Our goal is to get a feel for the style of code you write as well as your thought process and problem solving skills.
+
+What does a modern web development stack use:
+* Enables easy development setup
+* Allows for cloud hosting - not on any specific platform
+
 
 ## Feature Request App
 Build a web application that allows the user to manage "feature requests".
@@ -56,11 +60,33 @@ It will start and be running [Landing Page](https://localhost:8080/)
 * user - username=user password=user
 * admin - username=admin password=admin
 
-## Be sure and checkout
+## Be sure and checkout - login as admin
 * the admin tools
+** [API Documentation - Swagger UI](http://localhost:8080/admin/docs)
+** [Database Design ](http://localhost:8080/h2-console/login.jsp)
 * the language change
 
 ## Advanced features
+
+### generate CI/CD
+
+```shell
+jhipster ci-cd
+``` 
+#### specify platform
+
+* Jenkins pipeline
+* Azure Pipelines
+* GitLab CI
+* GitHub Actions
+* Travis CI
+* CircleCI
+
+## Cloud Deployment
+
+### Kuberneties
+
+[Full Instructions](https://www.jhipster.tech/kubernetes/)
 
 ### Deploy to docker
 
@@ -74,14 +100,11 @@ example
 docker container run --name jhipster -v ~/code/java-web-developer:/home/jhipster/app -v ~/.m2:/home/jhipster/.m2 -p 8080:8080 -p 9000:9000 -p 3001:3001 -d -t jhipster/jhipster
 ```
 
-### generate CI/CD
-
-
-
 ## Next Steps
 *Better error message when a non unique customer/customer_priority is saved
-
-
+* Performance tests with Gatling.
+* Behaviour-driven tests with Cucumber.
+* Angular/React/Vue integration tests with Protractor.
 
 
 
@@ -112,13 +135,17 @@ these features in their work.
 
 ## Technology
 
-1. *Open Source*. We have a strong affinity for open source technology. If your go-to technology stack includes
-proprietary software, you won't be helping yourself to use it in this project.
+1. Open Source - based on jhipster open source project
 
-2. *Decoupled Backend*. We are looking for candidates with a strong understanding of the entire web application stack. The best projects will completely decouple the backend and the front end and communciate via API.
+2. *Decoupled Backend*. Swagger based restful api, including swagger descriptor, for generating other front ends.
 
-3. *Test Suites with Continuous Integration*. Enterprise production requires rock solid stability. All code submitted into WCF repos must contain unit and regressions tests, so we favor candidates with experience writing quality tests.
+3. *Test Suites with Continuous Integration*. see ci/cd above for configuration
 
-4. *Usable, Responsive Interface*. There are many accessible CSS frameworks out there such as Bootstrap. All modern web applications should be responsive and these frameworks make it very easy to create a modern interface that adheres to established design principles and formats well on all devices.
+4. *Usable, Responsive Interface*. Seamless single page interface, with dynamic loading and fault tollerance.
 
-Thank you for your time. We are excited to review your project!
+5. Bonuses include 
+5.1 kuberneties/docker deploy
+5.2 internationalization support
+5.3 ability to generate flutter ios and android applications
+5.4 ci/cd support for a variety of platforms
+
